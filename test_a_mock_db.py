@@ -4,19 +4,6 @@ employees = []
 
 customers = []
 
-# @pytest.fixture()
-# def employees_table():
-#     """SETUP database"""
-#     employees.append('bob')
-#     return employees
-
-# @pytest.fixture()
-# def customers_table():
-#     """SETUP database"""
-#     customers.append('bob')
-#     yield 
-#     customers.clear()
-
 def test_find_employees(employees_table):
     assert employees[0] == 'bob'
 
